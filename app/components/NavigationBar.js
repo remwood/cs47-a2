@@ -14,6 +14,7 @@ export default function NavigationBar() {
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
     flexDirection: "row",
     height: Platform.OS === "android" ? 54 : 41,
     paddingHorizontal: 16,
