@@ -1,12 +1,13 @@
-import AppLoading from 'expo-app-loading';
-import { StyleSheet, Text, View, StatusBar } from 'react-native';
-import { useFonts } from 'expo-font';
-import { Themes } from './assets/Themes';
+import AppLoading from "expo-app-loading";
+import { useFonts } from "expo-font";
+import { SafeAreaView, StatusBar, StyleSheet, Text } from "react-native";
+import NavigationBar from "./app/components/NavigationBar";
+import { Themes } from "./assets/Themes";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
-    Sydney: require('./assets/Fonts/Sydney-Serial-Regular.ttf'),
-    SydneyBold: require('./assets/Fonts/Sydney-Serial-Bold.ttf'),
+    Sydney: require("./assets/Fonts/Sydney-Serial-Regular.ttf"),
+    SydneyBold: require("./assets/Fonts/Sydney-Serial-Bold.ttf"),
   });
   if (!fontsLoaded) return <AppLoading />;
   /* ^Don't mind/edit the code above, it's there to load the font for you! */
@@ -16,28 +17,31 @@ export default function App() {
   /* insert your code here */
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <NavigationBar />
       <Text
         style={{
-          fontFamily: 'Sydney', // test to see if the font is loaded, feel free to remove this
-        }}>
+          fontFamily: "Sydney", // test to see if the font is loaded, feel free to remove this
+        }}
+      >
         Open up App.js to start working on your app!
       </Text>
       <Text
         style={{
-          fontFamily: 'Sydney-Bold', // test to see if the font is loaded, feel free to remove this
-        }}>
+          fontFamily: "Sydney-Bold", // test to see if the font is loaded, feel free to remove this
+        }}
+      >
         ~Good luck~
       </Text>
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
+    backgroundColor: "#fff",
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
 });
