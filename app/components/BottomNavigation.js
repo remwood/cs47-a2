@@ -45,5 +45,6 @@ const navigationButtonStyles = StyleSheet.create({
   },
   text: {
     color: Themes.light.textSecondary,
+    fontFamily: "Sydney",
   },
 });

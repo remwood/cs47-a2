@@ -55,10 +55,12 @@ const styles = StyleSheet.create({
   },
   name: {
     color: Themes.light.textSecondary,
+    fontFamily: "Sydney",
     fontSize: 24,
   },
   distance: {
     color: Themes.light.textSecondary,
+    fontFamily: "Sydney",
   },
   audioFeature: {
     backgroundColor: Themes.light.bgSecondary,
@@ -72,6 +74,7 @@ const styles = StyleSheet.create({
     shadowRadius: Themes.light.shadows.shadowRadius,
   },
   audioFeatureTitle: {
+    fontFamily: "Sydney",
     fontSize: 24,
   },
   audioContainer: {

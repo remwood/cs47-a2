@@ -27,5 +27,6 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     fontSize: 32,
     textAlign: "center",
+    fontFamily: "SydneyBold",
   },
 });
