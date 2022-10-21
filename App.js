@@ -1,6 +1,7 @@
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 import { SafeAreaView, StatusBar, StyleSheet, Text } from "react-native";
+import BottomNavigation from "./app/components/BottomNavigation";
 import NavigationBar from "./app/components/NavigationBar";
 import ProfileCard from "./app/components/ProfileCard";
 import { Themes } from "./assets/Themes";
@@ -35,6 +36,7 @@ export default function App() {
       >
         ~Good luck~
       </Text>
+      <BottomNavigation />
     </SafeAreaView>
   );
 }
