@@ -11,7 +11,7 @@ import mtl from "../../assets/Profiles/mtl.jpg";
 import audioWaveform from "../../assets/Icons/audio_waveform_light.png";
 import { Themes } from "../../assets/Themes";
 
-export default function ProfileCard() {
+export default function Body() {
   return (
     <View style={styles.container}>
       <ImageBackground source={mtl} resizeMode="cover" style={styles.image}>

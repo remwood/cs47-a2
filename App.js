@@ -1,9 +1,9 @@
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
-import { SafeAreaView, StatusBar, StyleSheet, Text } from "react-native";
-import BottomNavigation from "./app/components/BottomNavigation";
-import NavigationBar from "./app/components/NavigationBar";
-import ProfileCard from "./app/components/ProfileCard";
+import { SafeAreaView, StatusBar, StyleSheet } from "react-native";
+import Body from "./app/components/body";
+import Footer from "./app/components/footer";
+import Header from "./app/components/header";
 import { Themes } from "./assets/Themes";
 
 export default function App() {
@@ -20,9 +20,9 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <NavigationBar />
-      <ProfileCard />
-      <BottomNavigation />
+      <Header />
+      <Body />
+      <Footer />
     </SafeAreaView>
   );
 }

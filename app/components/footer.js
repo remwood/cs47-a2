@@ -1,7 +1,7 @@
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
 import { Icons, Themes } from "../../assets/Themes";
 
-export default function BottomNavigation() {
+export default function Footer() {
   return (
     <View style={bottomNavigationStyles.container}>
       <NavigationButton first source={Icons.discover.light} text={"Discover"} />

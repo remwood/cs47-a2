@@ -2,7 +2,7 @@ import { Image, Platform, StyleSheet, Text, View } from "react-native";
 import menuLightIcon from "../../assets/Icons/menu_light.png";
 import sunIcon from "../../assets/Icons/sun.png";
 
-export default function NavigationBar() {
+export default function Header() {
   return (
     <View style={styles.container}>
       <Image source={menuLightIcon} style={styles.button} />
