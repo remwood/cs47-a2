@@ -22,20 +22,6 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <NavigationBar />
       <ProfileCard />
-      <Text
-        style={{
-          fontFamily: "Sydney", // test to see if the font is loaded, feel free to remove this
-        }}
-      >
-        Open up App.js to start working on your app!
-      </Text>
-      <Text
-        style={{
-          fontFamily: "Sydney-Bold", // test to see if the font is loaded, feel free to remove this
-        }}
-      >
-        ~Good luck~
-      </Text>
       <BottomNavigation />
     </SafeAreaView>
   );
