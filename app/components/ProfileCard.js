@@ -41,9 +41,9 @@ const styles = StyleSheet.create({
     paddingVertical: 16,
   },
   image: {
+    aspectRatio: 1 / 1.1,
     borderRadius: 16,
     elevation: 4,
-    height: Dimensions.get("window").width - 32,
     justifyContent: "space-between",
     overflow: "hidden",
     padding: 16,
